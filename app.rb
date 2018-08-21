@@ -22,6 +22,7 @@ class App < Sinatra::Base
     @n.times do
       @response += @phrase
     end
+    @response
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
